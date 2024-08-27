@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GeneralUserWidget</class>
+ <widget class="QWidget" name="GeneralUserWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>553</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="computerNamePlaceholderLabel">
+     <property name="text">
+      <string>Placeholder</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="5">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="firstNameLabel">
+     <property name="text">
+      <string>First name:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="computerNameLineEdit"/>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="initialsLabel">
+     <property name="text">
+      <string>Initials:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" colspan="2">
+    <widget class="QLineEdit" name="initialsLineEdit"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="lastNameLabel">
+     <property name="text">
+      <string>Last name:</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="4">
+    <widget class="QLineEdit" name="lastNameLineEdit"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="displayNameLabel">
+     <property name="text">
+      <string>Display name:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="4">
+    <widget class="QLineEdit" name="displayNameLineEdit"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="descriptionLabel">
+     <property name="text">
+      <string>Description:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" colspan="4">
+    <widget class="QLineEdit" name="descriptionLineEdit"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="officeLabel">
+     <property name="text">
+      <string>Office:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" colspan="4">
+    <widget class="QLineEdit" name="officeLineEdit"/>
+   </item>
+   <item row="7" column="0" colspan="5">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="telephoneNumberLabel">
+     <property name="text">
+      <string>Telephone number:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1" colspan="3">
+    <widget class="QLineEdit" name="telephoneNumberLineEdit"/>
+   </item>
+   <item row="8" column="4">
+    <widget class="QToolButton" name="otherTelephoneNumberToolButton">
+     <property name="text">
+      <string>Other</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="emailLabel">
+     <property name="text">
+      <string>E-mail:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1" colspan="4">
+    <widget class="QLineEdit" name="emailLineEdit"/>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="webPageLabel">
+     <property name="text">
+      <string>Web page:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1" colspan="3">
+    <widget class="QLineEdit" name="webPageLineEdit"/>
+   </item>
+   <item row="10" column="4">
+    <widget class="QToolButton" name="otherWebPageToolButton">
+     <property name="text">
+      <string>Other</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0" colspan="5">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>468</width>
+       <height>88</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="12" column="0" colspan="5">
+    <widget class="QDialogButtonBox" name="dialogButtonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
+     </property>
+     <property name="centerButtons">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

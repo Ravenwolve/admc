@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ComputerTabWidget</class>
+ <widget class="QTabWidget" name="ComputerTabWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>517</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>1</number>
+  </property>
+  <widget class="QWidget" name="generalTab">
+   <attribute name="title">
+    <string>General</string>
+   </attribute>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>48</horstretch>
+        <verstretch>48</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="osTab">
+   <attribute name="title">
+    <string>Operating System</string>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="memberOfTab">
+   <attribute name="title">
+    <string>Member Of</string>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="delegationTab">
+   <attribute name="title">
+    <string>Delegation</string>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="locationTab">
+   <attribute name="title">
+    <string>Location</string>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="managedByTab">
+   <attribute name="title">
+    <string>Managed By</string>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="dialInTab">
+   <attribute name="title">
+    <string>Dial-in</string>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

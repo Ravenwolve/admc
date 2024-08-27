@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DelegationWidget</class>
+ <widget class="QWidget" name="DelegationWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>532</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <widget class="QLabel" name="delegationDescriptionLabel">
+     <property name="text">
+      <string>Delegation is a security-sensitive operation, which allows services to act on behalf of another user.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="trustGroupBox">
+     <property name="title">
+      <string notr="true"/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0" colspan="2">
+       <widget class="QRadioButton" name="doNotTrustRadioButton">
+        <property name="text">
+         <string>Do not trust this computer for delegation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QRadioButton" name="trustAnyRadioButton">
+        <property name="text">
+         <string>Trust this computer for delegation to any service (Kerberos only)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QRadioButton" name="trustSpecifiedRadioButton">
+        <property name="text">
+         <string>Trust this computer for delegation to specified services only</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QGroupBox" name="trustSpecifiedGroupBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string notr="true"/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="useKerberosOnlyRadioButton">
+           <property name="text">
+            <string>Use Kerberos only</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="useAnyRadioButton">
+           <property name="text">
+            <string>Use any authentification protocol </string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QLabel" name="servicesLabel">
+           <property name="text">
+            <string>Services to which this account can present delegated credentials:</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QTableView" name="servicesTableView"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="expandedCheckBox">
+           <property name="text">
+            <string>Expanded</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSplitter" name="splitter">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QToolButton" name="addToolButton">
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="removePushButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Remove</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QDialogButtonBox" name="dialogButtonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>trustSpecifiedRadioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>trustSpecifiedGroupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

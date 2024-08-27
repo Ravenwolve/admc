@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelephonesWidget</class>
+ <widget class="QWidget" name="TelephonesWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="1" column="0">
+    <widget class="QLabel" name="notesLabel">
+     <property name="text">
+      <string>Notes:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="telephonesGroupBox">
+     <property name="title">
+      <string>Telephones numbers</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="homeLabel">
+        <property name="text">
+         <string>Home:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="homeLineEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="pagerLabel">
+        <property name="text">
+         <string>Pager:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="pagerLineEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="mobileLabel">
+        <property name="text">
+         <string>Mobile:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="mobileLineEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="faxLabel">
+        <property name="text">
+         <string>Fax:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="faxLineEdit"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="ipPhoneLabel">
+        <property name="text">
+         <string>IP phone:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="ipPhoneLineEdit"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QToolButton" name="otherFaxToolButton">
+        <property name="text">
+         <string>Other</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QToolButton" name="otherIPPhoneNumberToolButton">
+        <property name="text">
+         <string>Other</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="otherHomeToolButton">
+        <property name="text">
+         <string>Other</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QToolButton" name="otherMobileToolButton">
+        <property name="text">
+         <string>Other</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QToolButton" name="otherPagerToolButton">
+        <property name="text">
+         <string>Other</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QDialogButtonBox" name="dialogButtonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTextEdit" name="notesTextEdit"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

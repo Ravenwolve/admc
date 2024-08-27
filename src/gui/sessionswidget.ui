@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SessionsWidget</class>
+ <widget class="QWidget" name="SessionsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>463</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="descriptionLabel">
+     <property name="text">
+      <string>Use this tab to set Remote Desktop Services timeout and reconnection settings</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="endSessionLabel">
+     <property name="text">
+      <string>End a disconnected session:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="endSessionComboBox">
+     <item>
+      <property name="text">
+       <string>Never</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 minute</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>15 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>30 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 hour</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 day</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2 days</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="activeSessionLabel">
+     <property name="text">
+      <string>Active session limit:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QComboBox" name="activeSessionComboBox">
+     <item>
+      <property name="text">
+       <string>Never</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 minute</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>15 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>30 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 hour</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 day</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2 days</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="idleSessionLabel">
+     <property name="text">
+      <string>Idle session limit:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QComboBox" name="idleSessionComboBox">
+     <item>
+      <property name="text">
+       <string>Never</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 minute</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>15 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>30 minutes</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 hour</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 day</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2 days</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QGroupBox" name="sessionReachedLimitHandlerGroupBox">
+     <property name="title">
+      <string>When a session limit is reached or connection is broken:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="disconnectRadioButton">
+        <property name="text">
+         <string>Disconnect from session</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="endRadioButton">
+        <property name="text">
+         <string>End session</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="2">
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="2">
+    <widget class="QGroupBox" name="allowReconnectionGroupBox">
+     <property name="title">
+      <string>Allow reconnection:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="allowAnyRadioButton">
+        <property name="text">
+         <string>From any client</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="allowOriginatingOnlyRadioButton">
+        <property name="text">
+         <string>From originating client only</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="9" column="0" colspan="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>408</width>
+       <height>74</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="10" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="dialogButtonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

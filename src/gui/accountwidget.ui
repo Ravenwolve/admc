@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountWidget</class>
+ <widget class="QWidget" name="AccountWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>458</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="userLogonNameLabel">
+     <property name="text">
+      <string>User logon name:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLineEdit" name="userLogonNameLineEdit"/>
+   </item>
+   <item row="1" column="2">
+    <widget class="QComboBox" name="userLogonNameComboBox"/>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QLabel" name="userLogonNamePreLabel">
+     <property name="text">
+      <string>User logon name (pre-Windows 2000):</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLineEdit" name="userLogonNameRootPreLineEdit">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLineEdit" name="userLogonNamePreLineEdit"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QToolButton" name="logonHoursToolButton">
+     <property name="text">
+      <string>Logon Hours</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QCheckBox" name="unlockAccountCheckBox">
+     <property name="text">
+      <string>Unlock account</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QLabel" name="accountOptionsLabel">
+     <property name="text">
+      <string>Account options:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="3">
+    <widget class="QScrollArea" name="optionsScrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="optionsScrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>424</width>
+        <height>359</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="optionChangePasswordCheckBox">
+         <property name="text">
+          <string>User cannot change password</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QCheckBox" name="optionEncryptDESCheckBox">
+         <property name="text">
+          <string>Use Kerberos DES encryption types for this account</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QCheckBox" name="optionKerberosPreauthCheckBox">
+         <property name="text">
+          <string>Do not require Kerberos preauthentification</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QCheckBox" name="optionEncryptAES256CheckBox">
+         <property name="text">
+          <string>This account supports Kerberos AES 256 bit encryption.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="optionEncryptPasswordCheckBox">
+         <property name="text">
+          <string>Store password using reversible encryption</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="optionExpiresCheckBox">
+         <property name="text">
+          <string>Password never expires</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="optionDisabledCheckBox">
+         <property name="text">
+          <string>Account is disabled</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="optionChangePasswordNextLogonCheckBox">
+         <property name="text">
+          <string>User must change password at next logon</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QCheckBox" name="optionSensitiveCheckBox">
+         <property name="text">
+          <string>Account is sensitive and cannot be delegated</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="optionSmartCardCheckBox">
+         <property name="text">
+          <string>Smart card is required for interactive logon</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QCheckBox" name="optionEncryptAES128CheckBox">
+         <property name="text">
+          <string>This account supports Kerberos AES 128 bit encryption.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="9" column="0" colspan="3">
+    <widget class="QDialogButtonBox" name="dialogButtonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="2">
+    <widget class="QToolButton" name="logonToToolButton">
+     <property name="text">
+      <string>Log On To</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="3">
+    <widget class="QGroupBox" name="accountExpiresGroupBox">
+     <property name="title">
+      <string>Account expires</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="2">
+       <widget class="QRadioButton" name="neverExpiresRadioButton">
+        <property name="text">
+         <string>Never</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="expiresRadioButton">
+        <property name="text">
+         <string>End of:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDateEdit" name="expiresDateEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>expiresRadioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>expiresDateEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>334</x>
+     <y>424</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
